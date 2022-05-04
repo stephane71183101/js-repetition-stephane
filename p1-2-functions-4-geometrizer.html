@@ -12,15 +12,18 @@
     <h5>The Geometrizer</h5>
 
     <script>
-        function calculatesupply(age, amountPerDay) {
-            const maxAge = 96;
-            return 'You will need ' + (Math.round((maxAge-age)*amountPerDay*365)) + ' ice creams to last you until the ripe old age of ' + maxAge + '.';
+        function calculateCircumfrence(radius) {
+            return 'The circumference is ' + (2*radius*Math.PI) + '.';
+        }
+
+        function calcArea(radius) {
+            return 'The area is ' + (radius*radius*Math.PI) + '.';
         }
         
-        console.log(calculatesupply(47, 3));
-        console.log(calculatesupply(47, 1.3));
-        console.log(calculatesupply(47, 7));
-        </script>
+        console.log(calculateCircumfrence(19));
+        console.log(calcArea(19));
+
+</script>
 </body>
 
 </html>
