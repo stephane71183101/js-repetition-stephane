@@ -12,11 +12,13 @@
     <h5>The Puppy Age Calculator</h5>
 
     <script>
-        function calculateDogAge(dogAgeInHumanYears) {
-            return 'Your doggie is ' + (dogAgeInHumanYears*7) + ' years old in dog years!';
+        function calculateDogAge(dogAgeInHumanYears, convertionRate) {
+            return 'Your doggie is ' + (dogAgeInHumanYears*convertionRate) + ' years old in dog years!';
         }
         
-        console.log(calculateDogAge(6));
+        console.log(calculateDogAge(6, 7));
+        console.log(calculateDogAge(2, 7));
+        console.log(calculateDogAge(11, 8));
         </script>
 </body>
 
