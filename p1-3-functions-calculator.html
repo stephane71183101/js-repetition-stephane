@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Part one, link three: functions</h3>
+    <h5>Exercise 1: The Calculator</h5>
+
+    <script>
+        function squaredNumber(number) {
+            var numberNumber = number*number;
+            return 'The result of squaring the number ' + number + ' is ' + numberNumber + '.';
+        }
+
+        function halfNumber(number) {
+            var numberDivByTwo = number/2;
+            return 'The result of dividing the number ' + number + ' by 2 is ' + numberDivByTwo + '.';
+        }
+
+        function percentOf(numberOne, numberTwo) {
+            var percOneOfTwo = 100/numberTwo*numberOne;
+            return numberOne + ' is ' + percOneOfTwo + '% of ' + numberTwo;
+        }
+
+        function areaOfCircle(radius) {
+            var area = radius*radius*Math.PI;
+            return 'The area for a circle with radius ' + radius + ' is ' + area.toFixed(2) + '!';
+        }
+
+        function allInOne(number) {
+            var halfOf = number/2;
+            var squaredOf = halfOf*halfOf;
+            var areaOf = squaredOf*squaredOf*Math.PI;
+            var percentOf = 100/squaredOf*areaOf;
+            return 'The area of teh circle is ' + Math.round(percentOf) + '% of the squared of the half of ' + number + '.'
+        }
+
+        console.log(squaredNumber(9));
+        console.log(halfNumber(92));
+        console.log(percentOf(122, 244));
+        console.log(areaOfCircle(10));
+        console.log(allInOne(100));
+
+</script>
+</body>
+
+</html>
