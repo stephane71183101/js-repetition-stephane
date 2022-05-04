@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Part two, link five</h3>
+    <h5>The Temperature Converter</h5>
+
+    <script>
+        function celsiusToFahrenheit(celsius) {
+            var cF = Math.round(celsius/5*9)+32;
+            return celsius + '°C is ' + cF + '°F.';
+        }
+
+        function fahrenheitToCelsius(fahrenheit) {
+            var fC = Math.round((fahrenheit-32)*5/9);
+            return fahrenheit + '°F is ' + fC + '°C.';
+        }
+
+        console.log(celsiusToFahrenheit(37));
+        console.log(fahrenheitToCelsius(82));
+
+</script>
+</body>
+
+</html>
