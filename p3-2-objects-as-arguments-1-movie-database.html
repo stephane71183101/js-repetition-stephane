@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Part three, link two: Objects as Arguments</h3>
+    <h5>Exercise 1: The Movie Database</h5>
+
+    <script>
+        var myFavoriteMovie = {
+            title: 'Reservoir Dogs',
+            duration: 99,
+            stars: ['Harvey Keitel,', 'Tim Roth', 'Michael Madsen', 'Chris Penn', 'Steve Buscemi', 'Lawrence Tierney', 'Edward Bunker', 'Quentin Tarantino']
+        };
+
+        function printMovie(movie) {
+            console.log(movie.title + ' lasts for ' + movie.duration + ' minutes.');
+            var starsString = 'Stars: ';
+            for (var i = 0; i < movie.stars.length; i++) {
+                starsString += movie.stars[i];
+                if (i != movie.stars.length -1) {
+                    starsString += ', ';
+                }
+            }
+            console.log(starsString);
+        }
+        printMovie(myFavoriteMovie);
+
+
+</script>
+</body>
+
+</html>
